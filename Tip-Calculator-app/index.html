@@ -38,44 +38,55 @@
 
           <!-- Tip field -->
           <label class="standard-label" for="tip">Select Tip %</label>
-          <div>
+          <div class="tip-button-container">
             <button class="tip-button" type="button">5%</button>
-            <button class="tip-button">10%</button>
-            <button class="tip-button">15%</button>
-            <button class="tip-button">25%</button>
-            <button class="tip-button">50%</button>
+            <button class="tip-button" type="button">10%</button>
+            <button class="tip-button" type="button">15%</button>
+            <button class="tip-button" type="button">25%</button>
+            <button class="tip-button" type="button">50%</button>
+            <input
+              class="custom-input"
+              id="tip"
+              type="number"
+              class="standard-input"
+              placeholder="Custom"
+            />
           </div>
-          <input id="tip" type="number" class="standard-input" />
 
           <!-- Number of people field -->
           <label class="standard-label" for="number-of-people"
             >Number of People</label
           >
           <div class="input-container">
-            <input id="number-of-people" type="number" class="standard-input" />
+            <input
+              id="number-of-people"
+              type="number"
+              class="standard-input"
+              placeholder="0"
+            />
             <img class="input-icon-left" src="./assets/icon-person.svg" />
           </div>
 
           <!-- Calculate -->
-          <button type="submit">Calculate</button>
+          <button class="sumbit-button" type="submit">Calculate</button>
         </form>
         <div class="results-container">
           <!-- First row -->
-          <div class="results-row">
-            <div>
+          <div class="results-row-container">
+            <div class="results-row-amount">
               <h4>Tip Amount</h4>
               <p>/ person</p>
             </div>
-            <p>$0.00</p>
+            <p class="amount-total-paragraph">$0.00</p>
           </div>
 
           <!-- Second row -->
-          <div class="results-row">
-            <div>
+          <div class="results-row-container">
+            <div class="results-row-amount">
               <h4>Total</h4>
               <p>/ person</p>
             </div>
-            <p>$0.00</p>
+            <p class="amount-total-paragraph">$0.00</p>
           </div>
 
           <!-- Reset button -->
