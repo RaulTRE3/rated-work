@@ -7,15 +7,16 @@
 body,
 html {
   background-color: var(--very-dark-blue);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 section {
   background-color: var(--dark-blue);
   width: 413px;
   height: 413px;
   border-radius: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 34px;
 }
 :root {
@@ -38,8 +39,13 @@ section {
   background-color: hsl(213, 19%, 20%);
   color: var(--light-grey);
 }
-.selected-rate {
+.feedback-rate-button:hover {
   background-color: var(--orange);
+  color: var(--very-dark-blue);
+}
+.selected-rate {
+  background-color: var(--white);
+  color: var(--very-dark-blue);
 }
 
 .first-step-container h1 {
@@ -74,6 +80,9 @@ section {
   font-weight: 700;
   font-size: 16px;
   letter-spacing: 2px;
+}
+.submit-button:hover {
+  background-color: var(--white);
 }
 /*  second-step-container */
 .second-step-container {
